@@ -1,0 +1,581 @@
+BAJAJ FINSERV INTERVIEW QUESTIONS :
+const basicValue = "";
+const nullishValue = null;
+const firstExample = basicValue ?? "example";
+const secondExample = nullishValue ?? "example";
+const thirdExample = basicValue || "example";
+console.log(firstExample)
+console.log(secondExample)
+console.log(thirdExample)
+ 
+const basicValue = "";
+
+const nullishValue = null;
+
+const firstExample = basicValue ?? "example";
+
+const secondExample = nullishValue ?? "example";
+
+const thirdExample = basicValue || "example";
+
+console.log(firstExample) // example
+
+console.log(secondExample) //  null
+
+console.log(thirdExample) // example
+ 
+ 
+const obj = {
+
+"name":'gautami',
+
+"age":"24"
+
+}
+ 
+const jsonArr = JSON.parse(obj)
+
+console.log(jsonArr)
+ 
+try {
+
+if(JSON.parse(obj) == '' || JSON.parse(obj) == undefined ) {
+
+console.log('in try block');
+
+}
+
+catch {
+
+console.log('error caught')
+
+}
+
+}
+ 
+// promise resolves itself after 2 seconds
+ 
+const newPromise = new Promise((resolve, reject) => {
+ 
+   setTimeout((newPromise.then()) => {
+
+      console.log('resolved')
+
+   }), 2000)
+
+})
+ 
+let obj = { a: 1, b: 2, c: 3, d: 4 };
+let result = Object.values(obj).filter(x => x % 2 === 0);
+console.log(result);
+ 
+let obj = { a: 1, b: 2, c: 3, d: 4 };
+
+let result = Object.values(obj).filter(x => x % 2 === 0);
+
+console.log(result);
+
+ 
+// [2,4]
+ 
+null==undefined
+null === undefined
+ 
+let arr = [1, 2, 3, 4, 5];
+let result = arr.every(x => x > 0);
+let result = arr.some(x => x > 4);
+
+ 
+let arr = [1, 2, 3, 4, 5];
+
+let result = arr.every(x => x > 0);
+
+let result = arr.some(x => x > 4);
+
+// 1  => true
+
+// 2  => true
+
+ 
+const checkIsNAN = isNaN("String")
+
+console.log(checkIsNAN)
+ 
+ 
+ 
+let arr = [1,2,3,4,5];
+
+arr.length = 0
+
+console.log(arr)
+
+ 
+ 
+What is the output of the following code?
+
+let arr = [1, 2, 3, 4, 5];
+
+arr.splice(2, 1, 10, 20);
+
+console.log(arr);
+ 
+ 
+detectChanges()
+ 
+https://leetcode.com/problems/palindrome-number/
+ 
+second largest number in an array
+ 
+//second largest ele in array
+
+let arr = [1,2,3,5];
+ 
+function secondLargest(arr) {
+
+const arr2 = [...new Set(arr)].sort((a,b)=> b-a)
+
+return arr2[1]
+
+}
+ 
+console.log(secondLargest(arr))
+ 
+
+
+// module federation in angular
+// pure pipes
+// Route guards, can activate, can Deactivate
+// onpush change detection - check methods
+// let and const - hoisting related
+// interceptors
+// what are promises
+// lazy loading
+// why to use pipes instead of handling it in .ts?
+// what is transpiling?
+// what is task queues like micro, macro?
+// array.shift what it does.. then i said array.pop?
+// store in ngrx
+// nullish coalesing
+// make array empty
+
+L2:
+const data = [1, 2, 5, 1, 5, 2, 7, 4, 3, 1]
+// [7,4,3]
+
+// If there is a URL, and i type v3 instead of v2, i dont get any page... what could be the reason?
+// Rest vs spread operator
+
+
+
+18/04/2025:
+TCS Interview questions:
+1. Any 2 challenging components you worked on in angular []
+2. Tell about your project in technical way [D]
+3. Explain observables in layman terms []
+4. Interceptors? []
+5. Display block vs display inline block [D]
+6. TMAY briefly []
+7. Worked on modular or standalone ? []
+8. Web performance optimization ways [D]
+
+Managerial Round:
+1. Why you leaving your job? []
+2. NP/ OK With WFO/ OK With Location?
+
+
+19/04/2025:
+Clover Infotech Interview questions:
+1. TMAY
+2. Tell about your project in technical way and any challenges faced
+3. Forms how to handle validation
+4. Higher order functions
+5. Closures
+6. Hoisting
+7. Share data between sibling components.
+8. What are components
+9. two way data binding
+10. Lifecycle of Angular
+11. what is ngmodule
+12. Event loop
+13. what are reactive and template driven forms?
+
+Question: You are given a nested array (e.g., [[1, 2], [3, [4, 5]]]). Write a function that flattens the array to a single level (e.g., [1, 2, 3, 4, 5]) and then sorts it in ascending order.
+Objective: Assess the ability to manipulate arrays and recursion.
+
+
+
+28/04/2025:
+Crimson Interactive Interview :
+1. Any challenging task you faced and how did you resolve it and learn from it?
+2. How is the procedure in MNC? You get prototype, design UI, Code, code review?
+3. How do you know a UI is successful? - I said responsiveness, user experience feedback?
+4. What if clients tell you this UI is wrong? How will you handle that?
+5. Browser Incompatibility how to handle ? - I said polyfills of Js
+
+
+
+
+KiloByte interview - 01/05/2025
+
+1. What is standalone component []
+2. Interaction between components []
+3. Code: second highest number without using sort  [Done]
+4. Forms related questions in stackblitz:
+- create a button and dynamically add a form field [Done]
+- Add validators [Done]
+5. Lifecycle hooks []
+6. TMAY
+7. State management in Angular []
+8. what features does 15 have that previous versions didn't have ? []
+9. upgraded any projects??
+
+Bajaj Finserv Managerial Qs: Challenges faced during testing Angular Application? []
+                           : Tell about bundle size optimization []
+
+
+Smart Analytica Interview:
+TMAY
+Tell about your current project?
+1. conditional operator
+2. keyof
+3. how is ts different than js?
+4. mapped operator?
+5. never vs void
+6. Conditional in interfaces
+7. what are decorators?
+8. union types
+9. Generics in typescript
+10. does typescript support oops?
+11. explain all oops
+12. worked in AI?
+
+
+UST Interview:
+1. Signals
+2. internalization
+3. How are components importing dependencies in a standalone component since we do not have root module?
+4. Object Assign
+5. Interceptors
+6. If i have 2 components that i do not want to use in another 2 components. then how will i mention in the 2 modules? other modules should not have access to the 2 components. can i declare both components in the 2 modules? ===> something for cyclic dependency
+7. if i reload my page, will data stay that i have called using services?
+8. git rebase
+9. JWT Tokens?
+10. How do you do the security and authentication for your project? what steps u take?
+11. es6 features?
+12. new features in Angular 19?
+13. Change detection ? if i have made change only in parent component.. will change detection also trigger in child components? how to stop that?
+14. how to delete an object ? object property?
+15. how to dynamically add to an object if key is not known?
+16. can i do destructuring in nested objects?
+17. how can i clone an object ?
+18. what is spread operator?
+19. is cloning shallow or deep copy? how to create deep copy? How to create clone of an object?
+20. Have you used server side rendering?
+21. Experience in Nodejs
+22. Bootstrapping of angular application.. how?
+23. What if i replace app module with another module? can i do that and how?
+24. How to clone an object?
+25. WORKED ON SONARQUBE? Code quality check tools?
+
+Creyente Infotech:
+TMAY
+TMA Project
+1. What is accessibility?
+2. Container in html
+3. metadata
+4. Css display none and visibility hidden
+5. call bind apply
+6. oops in python
+7. class, object, abstract class and interfaces in python
+8. what triggers you use for lambda
+9. whats sns
+10. types of binding in angular
+11. lifecycle in angular
+12. prototype inheritance
+13. higher order functions
+14. canvas vs svg?
+15. how is html loaded into the browser?
+16. flex vs grid?
+17. how to send http requests?
+18. debounce and throttle
+19. CSP
+20. Closures in JS
+21. Lazy loading in html
+
+
+
+
+Yitro Global Interview:
+1. TMAY
+2. Accessible
+3. CI/CD Questions How did you set up pipeline
+4. Feature flags and app config in aws
+5. how to make application responsive
+
+
+
+IKS Health Interview:
+1. for loop vs for each loop
+2. typeof null
+3. sum of array without using for loop
+4. lifecycle hooks
+5. ngonint vs constructor
+6. min , max, mid of array
+7. use of s3?
+8. bubble sort?
+7. can my .ts run without constructor?
+8. how did you use interceptor for loader?
+
+
+Netcore cloud Interview:
+
+1. write example of closure
+2. Explain directives
+3. NgIf ngFor is used from which module
+4. View Encapsulation how it works and have you seen what angular does in inspect element?
+5. Any questions ?
+
+
+const nums = [1,2,3,4]
+Output: [24,12,8,6]
+
+ // 1,2
+ // 0, 1
+ function getProduct(nums) {
+     const res = [];
+     for(let i=0; i<nums.length; i++){
+         let product = 1;
+         for(let j=0; j<nums.length; j++) {
+             if(i !== j) {
+                 product *= nums[j]
+             }
+             res.push(product)
+         }
+         return res;
+         
+     }
+ }
+ 
+ console.log(getProduct(nums))
+ 
+ function x() {
+  for (var i=1; i<=5; i++) {
+    setTimeout(function () {
+      console.log(i);
+    }, i * 1000)
+  }
+}
+
+// Explain in detail, how can i let var behave like let??
+
+x();
+
+const promise = new Promise((resolve) => {
+  console.log(1);
+  resolve();
+  console.log(2);
+});
+
+console.log(3);
+
+promise
+  .then(() => console.log(4))
+  .then(() => console.log(5));
+
+console.log(6);
+
+nums = [1,2,3,4]
+Output: [24,12,8,6]
+
+
+
+Bajaj L2
+const items = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
+// delete id 3 using findIndex and slice
+let res = items.findIndex(find);
+let result = items.splice(res, 1);
+
+function find(element) {
+    return element.id == 3
+}
+
+// promise
+const newPromise = new Promise((res, rej) => {
+   // res("Resolved!")
+    rej("Rejected!")
+})
+
+newPromise.catch((msg) => console.log(msg))
+
+// observable - write sample code
+
+// HTML
+// What are self closing tags?
+// Why we use alt tag in image?
+
+
+EY L2:
+1. Missing number code
+2. Why do we use Angular?
+3. find occurrences in string code
+4. HTML CSS - Create a rectangle place a circle inside it and place them in centre of the screen 
+
+Siemens L1:
+1. Content projection
+2. Transitive dependency
+3. obj reference snippet
+4. deep vs shallow copy
+5. Create subarray based on given size - CODE
+6. dynamic component loading 
+7. What does :: host does??
+8. Can my frontend angular client access something (like lets say download / access pdf) from a server directly?
+9. change detection default vs onpush
+
+
+Zyka Interview:
+1. generics vs types
+2. as constant in typescript
+3. interfaces vs types
+4. css preprocessors
+5. how to fetch/call api in angular
+6. flatten array : CODE
+7. Group anagrams : CODE
+8. Longest substring without repeating character : CODE
+::9. Debounce and use cases
+::10 RxJs operators you have used?
+
+BAJAJ L2:
+1. How will you debug CSS in your angular application? 
+Mixins
+Microfrontends
+Native android code
+Service workers
+SSR
+WerbSocket , gprc integration
+Caching techniques indexDb
+
+
+QQ::
+1. What if there are 20 APIs, in an interceptor in angular, I have to only include auth token to 10 APIs and exclude others. What to do in an interceptor?
+
+
+Assent Interview:
+HTML - 8/10 , 10/10
+CSS - 7.5/10 , 10/10
+JavaScript/TypeScript - 7.5/10, 10/10
+C <> S Communication - 7/10, 10/10
+
+
+Scenario:
+1. UI Rendered, Network gone, Gives no network error
+2. Server down, Error: Server is down, please try after sometime
+3. All ok but server has load, server is busy, please try after sometime
+
+*lifecycle - request
+
+1. async pipe, observer, subscribe
+
+2. const json = [
+    [
+        {
+            "key": "name",
+            "value": "gautami"
+        },
+        {
+            "key": "age",
+            "value": "25"
+        },
+        {
+            "key": "gender",
+            "value": "Female"
+        }
+    ],
+    [
+        {
+            "key": "name",
+            "value": "pranay"
+        },
+        {
+            "key": "age",
+            "value": "40"
+        }
+    ]
+]
+
+
+// OUTPUT :
+
+[
+    {
+        "name": "gautami",
+        "age": "25",
+        "gender": "Female"
+    },
+    {
+        "name": "pranay",
+        "age": "40"
+    }
+]
+
+function convertJson(json) {
+  let result = [];
+  for(let item of json) {
+
+}
+
+}
+
+
+SnapWork Technologies - 31/07/2025
+1. what is trackby in angular and write snippet
+2. switchmap vs mergemap
+3. call, apply, bind - what is it and write snippet
+4. what are pipes and types of pipes
+5. ngDoChanges vs ngDoCheck?
+6. Write test case for: (using jasmine/karma)
+if (environment.PLATFORM_NAME == 'ANDROID') {
+    if(response.data){
+      response = response?.data?.responseBody;
+    }
+  }
+7. CODE:
+let str = "hello world"
+// "Hello World"
+8. CODE:  Get Items with Zero Inventory from Object and Return as Array
+const inventory = {
+  item1: { name: "Apple", quantity: 10 },
+  item2: { name: "Banana", quantity: 0 },
+  item3: { name: "Orange", quantity: 5 },
+  item4: { name: "Grapes", quantity: 0 }
+};
+
+// Get full objects
+const zeroInventoryItems = [];
+for (const key in inventory) {
+  if (inventory[key].quantity === 0) {
+    zeroInventoryItems.push({ key: key, ...inventory[key] });
+  }
+}
+console.log("Full Zero Inventory Items:", zeroInventoryItems);
+
+// Get only names
+const zeroInventoryNames = [];
+for (const key in inventory) {
+  if (inventory[key].quantity === 0) {
+    zeroInventoryNames.push(inventory[key].name);
+  }
+}
+console.log("Zero Inventory Names:", zeroInventoryNames);
+
+9. What is use of main.ts file?
+10. What is View Encapsulation?
+11. what is debounce time?
+
+TranskBnk AI Interview:
+1. Performance optimization in angular ways
+2. How to use ngrx and rxjs for state management.. real time data using websocket ?
+3. Angular matrial vs custom ui components pros and cons?
+4. Debugging Q: Pic
+5. alternate way to nested subscribe() in rxjs? Q: Pic
+6. Show a comtainer with three items would stack vertically on small and horizontally on larger screens : Q: Pic
+7. How CI/CD you are using?
