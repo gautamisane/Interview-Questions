@@ -589,4 +589,19 @@ SS&P:
 1. Machine Coding - 2 Rounds , 2 Questions
 2. remove duplicates from array
 
+Wissen Technology:
+1. Remove all whitespaces in string
+let str = "H E LL O  "
+// output: "Hello"
+
+function getString(str) {
+    let string1 = str.replace(/\s/g, "")
+    return string1.charAt(0).toUpperCase() + string1.slice(1).toLowerCase()
+    
+}
+
+console.log(getString(str))
+
+2. Machine Coding : 
+Create Input Box , when you type something it should be visible in template below input. 
 
