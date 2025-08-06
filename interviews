@@ -603,5 +603,98 @@ function getString(str) {
 console.log(getString(str))
 
 2. Machine Coding : 
-Create Input Box , when you type something it should be visible in template below input. 
+Create Input Box , when you type something it should be visible in template below input.
+ 
+------------##----------------
 
+Loylty Rewardz Interview:
+
+1. 3 code snippets, tell output.
+const obj = {
+  name: "JS",
+  regularFunc: function () {
+    console.log(this.name);
+  },
+  arrowFunc: () => {
+    console.log(this.name);
+  }
+};
+obj.regularFunc();
+obj.arrowFunc();
+
+// output:
+1 .JS
+2. REFERROR
+
+Promise.resolve().then(() => {
+  console.log("promise 1");
+  setTimeout(() => {
+    console.log("Timeout 1");
+  },0);
+});
+
+setTimeout(() => {
+  console.log("Timeout 2");
+  Promise.resolve().then(() => {
+    console.log("promise 2");
+  });
+},0);
+
+console.log("End");
+
+// OUTPUT:
+End
+promise 1
+Timeout 1
+Timeout 2
+promise 2
+
+
+
+console.log(name); //undefined
+
+var name = "Darpan";
+
+function func() {
+
+  console.log(name); //undefined
+  name = "Mohit";
+  {
+    var name = "Tanmay";
+    console.log(name); //Tanmay
+  }
+  {
+    let name = "Amit";
+    console.log(name); //Amit
+  }
+  console.log(name); //Mohit
+}
+
+console.log(name); //Darpan
+
+func();
+
+// output:
+undefined
+Darpan
+Tanmay
+Tanmay
+Amit
+Darpan
+
+2. Code => Flatten Array
+
+3. What is view encapsulation?
+4. Diff between DISPLAY NONE AND VISIBILITY HIDDEN 
+(I Said removed from dom for first, but panel asked If it is removed from dom, If i go in inspect and check will it 
+be visible there, what if i want to change its display to block, it wont be in dom so how can i change?)
+5. switchmap vs mergemap
+6. Hoisting?
+7. Event loop working?
+8. What is event bubbling? 
+(Follow up Q: Lets say i want an event to be triggered in only child element, and not parent? what can i do? I said 
+event.stopPropogation() )
+9. If i have an image in S3, how can my frontend/client access it?
+10. What security practices you have done in angular? (I said auth tokens for http, route guards)
+11. debouncing and throttling?
+12. observables vs subjects?
