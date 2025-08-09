@@ -714,5 +714,40 @@ Aditya Birla Health Insurance L2:
 ONLINE ASSESSMENT : WalkingTree Technologies
 1. Create service which has getAllTransactions method, addTransaction and getTotalSum method 
 which returns sum from the transactions array which has amount in array of objects.
-2. 
-3. 
+2. let transactions = [
+{ id: "TXN001", amount: 500, date: "2025-08-01", status: "success" },
+{ id: "TXN002", amount: 1200, date: "2025-08-03", status: "failed" },
+{ id: "TXN003", amount: 2000, date: "2025-08-05", status: "success" },
+{ id: "TXN004", amount: 1500, date: "2025-08-02", status: "success" }
+];
+let threshold = 1000;
+
+
+function getSuccessfulTransactionIds(transactions, threshold) {
+return transactions
+.filter(txn => txn.status === "success" && txn.amount > threshold)
+.map(txn => txn.id)
+.sort(); // ascending by ID
+}
+
+console.log(getSuccessfulTransactionIds(transactions, threshold));
+// ["TXN003", "TXN004"]
+
+
+3. function getAccessiblePaths(routes, userRoles) {
+return routes
+.filter(route => route.allowedRoles.some(role => userRoles.includes(role)))
+.map(route => route.path);
+}
+
+// Example usage:
+let routes = [
+{ path: "/dashboard", allowedRoles: ["admin", "manager"] },
+{ path: "/settings", allowedRoles: ["admin"] },
+{ path: "/profile", allowedRoles: ["user", "manager"] },
+{ path: "/reports", allowedRoles: ["analyst"] }
+];
+let userRoles = ["manager", "user"];
+
+console.log(getAccessiblePaths(routes, userRoles));
+// ["/dashboard", "/profile"]
