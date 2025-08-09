@@ -698,3 +698,11 @@ event.stopPropogation() )
 10. What security practices you have done in angular? (I said auth tokens for http, route guards)
 11. debouncing and throttling?
 12. observables vs subjects?
+
+
+Aditya Birla Health Insurance L2:
+1. Difference between sessionStorage, localStorage, cache?
+2. Your project description?
+3. How do you measure application performance? Lighthouse?
+4. How do you share data between components?
+5. What do you know about modules? Advantages?
