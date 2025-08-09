@@ -710,3 +710,9 @@ Aditya Birla Health Insurance L2:
 3. How do you measure application performance? Lighthouse?
 4. How do you share data between components?
 5. What do you know about modules? Advantages?
+
+ONLINE ASSESSMENT : WalkingTree Technologies
+1. Create service which has getAllTransactions method, addTransaction and getTotalSum method 
+which returns sum from the transactions array which has amount in array of objects.
+2. 
+3. 
