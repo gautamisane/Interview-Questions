@@ -229,8 +229,12 @@ KiloByte interview - 01/05/2025
 8. what features does 15 have that previous versions didn't have ? []
 9. upgraded any projects??
 
-Bajaj Finserv Managerial Qs: Challenges faced during testing Angular Application? []
-                           : Tell about bundle size optimization []
+Bajaj Finserv Managerial Qs/ L2
+Challenges faced during testing Angular Application? []
+Tell about bundle size optimization []
+Have you found any issue after deploying app to prod? It worked in dev and uat but not prod. 
+How did you handle debug it?
+Issues faced while testing in angular ?
 
 
 Smart Analytica Interview:
