@@ -711,6 +711,7 @@ Aditya Birla Health Insurance L2:
 3. How do you measure application performance? Lighthouse?
 4. How do you share data between components?
 5. What do you know about modules? Advantages?
+6. Steps for auth and authorization in your application? what have you done?
 
 ONLINE ASSESSMENT : WalkingTree Technologies
 1. Create service which has getAllTransactions method, addTransaction and getTotalSum method 
