@@ -753,3 +753,22 @@ let userRoles = ["manager", "user"];
 
 console.log(getAccessiblePaths(routes, userRoles));
 // ["/dashboard", "/profile"]
+
+
+LOYLTY REWARDZ L2:
+Q.1
+const [a = 1] = [];
+const { b = 2 } = { b: undefined };
+const { c = 2 } = { c: null };
+
+Q2.
+Auth question/Angular If the bearer token for login is stored in localStorage, another developer copies it to his localStorage. 
+Can he login?
+
+Q3.
+Do u know about hashing/ encryption?
+
+
+--------------------------- DONE -----------------------------
+----------------- JOB SWITCH (1) SUCCESSFUL --------------------------
+---------------- JOINED "DELOITTE USI" -------------------------
