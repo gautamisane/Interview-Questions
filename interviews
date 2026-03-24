@@ -78,15 +78,7 @@ let arr = [1, 2, 3, 4, 5];
 let result = arr.every(x => x > 0);
 let result = arr.some(x => x > 4);
 
- 
-let arr = [1, 2, 3, 4, 5];
-
-let result = arr.every(x => x > 0);
-
-let result = arr.some(x => x > 4);
-
 // 1  => true
-
 // 2  => true
 
  
